@@ -1,11 +1,10 @@
 function sumofTwo(arr,tar) {
     let newArray = [];
-    let tempArray = arr;
-    let ptarget = tar;
-    for(let i=0;i<tempArray.length;i++) {
-        for(let j=0;j<tempArray.length;j++) {
-            if(tempArray[i]+tempArray[j] === ptarget) {
-                console.log(tempArray[i],tempArray[j]);
+   
+    for(let i=0;i<arr.length;i++) {
+        for(let j=i+1;j<arr.length;j++) {
+            if(arr[i]+arr[j] === tar) {
+                console.log(arr[i],arr[j]);
                 newArray.push(i);
                 newArray.push(j);
                 return newArray;
